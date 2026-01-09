@@ -2,21 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie Search App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>🎬 Movie Search App</h1>
+<h1>🎬 Movie Search App</h1>
 
-  <div class="search-box">
-    <input type="text" id="movieName" placeholder="Enter movie name">
-    <button onclick="searchMovie()">Search</button>
-  </div>
+<div class="search-box">
+  <input type="text" id="movieName" placeholder="Enter movie name">
+  <button onclick="searchMovie()">Search</button>
+</div>
 
-  <div id="result"></div>
+<div id="result"></div>
 
-  <script src="script.js"></script>
+<h2>🔥 Popular Movies</h2>
+<div id="moviesList" class="movies"></div>
+
+<!-- Booking box -->
+<div id="booking" class="booking">
+  <h3 id="bookTitle"></h3>
+  <select id="seat">
+    <option>1 Seat</option>
+    <option>2 Seats</option>
+    <option>3 Seats</option>
+  </select><br><br>
+  <button onclick="confirm()">Confirm</button>
+  <button onclick="closeBox()">Cancel</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

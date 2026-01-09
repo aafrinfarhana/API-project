@@ -1,55 +1,46 @@
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #141e30, #243b55);
-  color: white;
-  text-align: center;
-  padding: 40px;
+body{
+  font-family: Arial;
+  background: linear-gradient(to right,#141e30,#243b55);
+  color:white;
+  text-align:center;
 }
 
-h1 {
-  margin-bottom: 20px;
+input,button{
+  padding:10px;
+  border-radius:5px;
+  border:none;
 }
 
-.search-box {
-  margin-bottom: 20px;
+button{
+  background:#ff9800;
+  cursor:pointer;
 }
 
-input {
-  padding: 10px;
-  width: 250px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
+.movies{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,150px);
+  gap:20px;
+  justify-content:center;
+  margin-top:20px;
 }
 
-button {
-  padding: 10px 20px;
-  margin-left: 5px;
-  border: none;
-  border-radius: 5px;
-  background-color: #ff9800;
-  font-weight: bold;
-  cursor: pointer;
+.card{
+  background:#1f2a40;
+  padding:10px;
+  border-radius:10px;
+  cursor:pointer;
 }
 
-button:hover {
-  background-color: #ffc107;
+.card img{
+  width:100%;
+  border-radius:10px;
 }
 
-.movie-box {
-  background-color: #1f2a40;
-  padding: 20px;
-  border-radius: 10px;
-  width: 320px;
-  margin: 30px auto;
-}
-
-.movie-box img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.error {
-  color: red;
-  margin-top: 20px;
+.booking{
+  display:none;
+  background:#243b55;
+  width:250px;
+  padding:20px;
+  margin:20px auto;
+  border-radius:10px;
 }
